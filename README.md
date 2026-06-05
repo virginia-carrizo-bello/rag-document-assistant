@@ -193,10 +193,23 @@ Instalar dependencias:
 pip install -r requirements.txt
 ```
 
-Crear un archivo `.env` basado en `.env.example`:
+Crear un archivo de variables de entorno `.env` en la raíz del proyecto para configurar las credenciales requeridas.
+
+Puedes duplicar el archivo `.env.example` y renombrarlo como `.env`. Por ejemplo, ejecutando en la terminal:
+
+* **En Windows (PowerShell):**
+  ```powershell
+  Copy-Item .env.example .env
+  ```
+* **En Linux/macOS (o Git Bash):**
+  ```bash
+  cp .env.example .env
+  ```
+
+Luego, abre el archivo `.env` generado y reemplaza el valor de marcador con tu clave de API real de Cohere (puedes obtener una clave gratuita registrándote en el [Dashboard de Cohere](https://dashboard.cohere.com/)):
 
 ```env
-COHERE_API_KEY=your_cohere_api_key_here
+COHERE_API_KEY=tu_api_key_de_cohere
 ```
 
 ---
