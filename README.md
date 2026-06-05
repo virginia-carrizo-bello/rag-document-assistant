@@ -61,7 +61,7 @@ flowchart TD
         J --> K["Construir prompts con contexto"]
         K --> L["Enviar consulta al LLM<br>(Cohere: command-r7b-12-2024)"]
         L --> M["Guardar respuesta en caché"]
-        M --> N["Retornar respuesta final<br>(1 oración, 3ra persona y emojis)"]
+        M --> N["Retornar respuesta final"]
     end
 
     class A,B,C startup;
