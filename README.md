@@ -168,6 +168,13 @@ Además, se utiliza `temperature=0` y una cache persistente para asegurar que la
 
 ## ⚙️ Configuración local
 
+Clonar el repositorio y acceder al directorio:
+
+```bash
+git clone https://github.com/virginia-carrizo-bello/rag-document-assistant.git
+cd rag-document-assistant
+```
+
 Crear un ambiente virtual:
 
 ```bash
